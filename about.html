@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - About Me</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #fff;
+      }
+
+      header {
+        display: flex;
+        align-items: center; /* Vertikal sejajar */
+        justify-content: space-between; /* Logo di kiri, navigasi di kanan */
+        padding: 20px;
+        background-color: #1e1e1e;
+      }
+
+      header h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffcc00;
+        margin: 0; /* Menghilangkan margin untuk mengatur lebih baik */
+      }
+
+      header nav {
+        display: flex;
+        justify-content: center; /* Menyusun link navigasi di tengah */
+        flex-grow: 1; /* Membuat navigasi mengambil ruang yang tersisa */
+      }
+
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 15px; /* Jarak antar item navigasi */
+      }
+
+      header nav a:hover {
+        color: #ffcc00;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+
+      .about {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        text-align: left;
+      }
+
+      .about img {
+        flex-shrink: 0;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      .about h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .about p {
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .about .text {
+        flex-grow: 1; /* Teks mengambil sisa ruang */
+      }
+
+      .skills {
+        margin-top: 50px;
+      }
+
+      .skills h3 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+      }
+
+      .skill {
+        background-color: #1e1e1e;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .skill:hover {
+        transform: scale(1.05);
+      }
+
+      .skill img {
+        width: 50px;
+        margin-bottom: 10px;
+      }
+
+      .skill p {
+        font-size: 16px;
+        margin: 0;
+      }
+
+      .logo {
+        filter: invert(1) brightness(1000%);
+      }
+
+      .web-embed {
+        width: 100%;
+        height: 500px;
+        border: none;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .web-embed iframe {
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      @media (max-width: 768px) {
+        .about {
+          flex-direction: column; /* Ubah arah flex menjadi kolom */
+          align-items: center; /* Pastikan konten sejajar di tengah */
+          text-align: center; /* Ubah teks menjadi rata tengah */
+        }
+
+        .about img {
+          width: 300px;
+          height: 300px;
+          margin-bottom: 20px;
+        }
+
+        header nav {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    </style>
+    <header>
+      <h1>raihan adyatma();</h1>
+      <nav>
+        <a href="/codingan/index.html">Home</a>
+        <a href="#">About</a>
+        <a href="/codingan/portfolio.html">Portfolio</a>
+      </nav>
+      <a href="github.com">
+        <img
+          class="logo"
+          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+          alt="Github"
+          width="30"
+          height="30"
+        />
+      </a>
+    </header>
+
+    <div class="container">
+      <section class="about">
+        <img
+          src="WhatsApp Image 2025-01-09 at 14.30.35_652dce02.jpg"
+          alt="Profile Picture"
+        />
+        <div class="text">
+          <h2>About Me</h2>
+          <p>
+            Hi everyone! My name is Raihan Adyatma. I'm a web developer from
+            Kota Tegal, Central Java. I have 1 year of experience in back-end
+            web development. I really enjoy what I do right now. In my opinion,
+            creating programs is not just a job, but also an art that has
+            aesthetic value.
+          </p>
+          <p>
+            My job is to build your website to be functional and user-friendly
+            yet still attractive. In addition, I provide a personal touch to
+            your product and ensure that the website catches attention and is
+            easy to use. My goal is to convey your message and identity in the
+            most creative way. If you are interested in hiring me, please
+            contact the listed contact.
+          </p>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
+              alt="HTML"
+            />
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+              alt="CSS"
+            />
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png"
+              alt="PHP"
+            />
+            <p>PHP</p>
+          </div>
+          <div class="skill">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JavaScript"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <img
+              src="https://download.logo.wine/logo/WordPress.com/WordPress.com-Logo.wine.png"
+              alt="wordpress"
+            />
+            <p>wordpress</p>
+          </div>
+          <div class="skill">
+            <img src="img/vue.js.png" alt="Vue.js" />
+            <p>Vue.js</p>
+          </div>
+          <div class="skill">
+            <img
+              src="https://e7.pngegg.com/pngimages/439/345/png-clipart-bootstrap-logo-thumbnail-tech-companies-thumbnail.png"
+              alt="Boostrap"
+            />
+            <p>Boostrap</p>
+          </div>
+        </div>
+      </section>
+      <div class="web-embed">
+        <!-- <iframe src="http://google.com/" width="800" height="600" title="Halaman Example"></iframe> -->
+      </div>
+    </div>
+  </body>
+</html>
